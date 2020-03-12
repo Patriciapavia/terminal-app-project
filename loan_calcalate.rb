@@ -1,4 +1,7 @@
 
+require 'colorize'
+require 'gosu'
+
 def ask(prompt)
     puts prompt
     answer = gets.chomp
@@ -6,12 +9,13 @@ def ask(prompt)
 end
 
 
-puts"welcome to loan calculation"  
-puts "lets get started"        
-name = ask("what is your name")
-puts "Hello #{name}"
-income = ask("What is your income weekly").to_f
-puts "great!, now just need some information about your expense"
+
+puts"welcome to loan calculation".colorize(:light_blue)
+puts "lets get started" .colorize(:light_blue) 
+name = ask("what is your name".colorize(:light_blue))
+puts "Hello #{name}".colorize(:green)
+income = ask("What is your income weekly".colorize(:green)).to_f
+puts "great!, now just need some information about your expense".colorize(:color => :light_blue)
      
 rent = ask("how much is your rent weekly?").to_f
 
