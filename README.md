@@ -17,4 +17,8 @@ of this app is to get information from user who want to check if they are eligib
        * online on thier website and user can self check online
      
 ### Feature
+   
+   * Getting user name and say hello back to user
+   * Gathering informatiom from user from income to expense which include: rent, transport, food, creditcard.
+   * Calculating if user eligible for loan and how much user can borrow
 
